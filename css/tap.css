@@ -1302,9 +1302,9 @@ blockquote {
 }
 
 .hero-before-item.two {
-  top: 130px;
+  top: 140px;
   bottom: auto;
-  left: 80px;
+  left: 60px;
   right: auto;
 }
 
@@ -1326,8 +1326,8 @@ blockquote {
 
 .hero-before-item.five {
   top: auto;
-  bottom: 225px;
-  left: 72%;
+  bottom: 245px;
+  left: 65%;
   min-width: 200px;
 }
 
@@ -1354,7 +1354,7 @@ blockquote {
 .hero-before-item.nine {
   top: auto;
   bottom: 120px;
-  left: 55%;
+  left: 50%;
   min-width: 275px;
 }
 
