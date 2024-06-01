@@ -72,17 +72,12 @@
       .loop-marquee_item-before {
         animation: loop-marquee_item-before  15s linear infinite;
         width: 200%;
-        transform: translateX(-50%);
       }
     }
 
     @media screen and (max-width: 768px){
       .loop-marquee_item-before {
         animation: loop-marquee_item-before  10s linear infinite;
-      }
-      @keyframes loop-marquee_item-before {
-        from { transform: translateX(-50%); }
-        to { transform: translateX(50%); }
       }
       .hero-before-item.five {
         left: 70%;
@@ -122,13 +117,12 @@
         bottom: 50px;
       }
     }
-
-     @media screen and (max-width: 425px){
+    @media screen and (max-width: 425px){
       .loop-marquee_item-before{
         width: 400%;
       }
     }
-      
+
 </style>
 </head>
 <body>
