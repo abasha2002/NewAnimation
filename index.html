@@ -72,7 +72,11 @@
       .loop-marquee_item-before {
         animation: loop-marquee_item-before  15s linear infinite;
         width: 200%;
-        transform: translateX(-50%);
+        transform: translateX(-40%);
+      }
+      @keyframes loop-marquee_item-before {
+        from { transform: translateX(-40%); }
+        to { transform: translateX(60%); }
       }
 
     @media screen and (max-width: 768px){
@@ -83,8 +87,8 @@
 
 
       @keyframes loop-marquee_item-before {
-        from { transform: translateX(-50%); }
-        to { transform: translateX(50%); }
+        from { transform: translateX(-40%); }
+        to { transform: translateX(60%); }
       }
       .hero-before-item.five {
         left: 70%;
