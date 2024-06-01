@@ -15,12 +15,17 @@
 
     .loop-marquee_item-before {
       will-change: transform;
+      backface-visibility: hidden;
       animation: loop-marquee_item-before  15s linear infinite;
+      /* transform: translateZ(0); */
       /* manipulate the speed of the marquee by changing "40s" line above*/
     }
 
     .duplicated-before-item {
       margin-left: -100%;
+    }
+    .loop-marquee_item-before .hero-before-item div{
+      transform: translateZ(0.5px);
     }
     @keyframes loop-marquee_item-before {
       from { transform: translateX(0%); }
@@ -32,6 +37,9 @@
       white-space: nowrap;  
       will-change: transform;
       width: auto;
+
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
 
       /* manipulate the speed of the marquee by changing "40s" line above*/
     }
@@ -45,6 +53,7 @@
       from { transform: translateX(0%);}
       to { transform: translateX(calc(50% + 30px)); }
     }
+
     @media screen and (max-width: 1200px){
       .loop-marquee_item-after {
         animation: loop-marquee_item-after 60s linear infinite;
