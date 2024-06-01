@@ -1427,6 +1427,7 @@ blockquote {
 .hero-after-icon {
   width: 35px;
   height: 35px;
+  transform: scale(1.1);
 }
 
 .loop-marquee_item-after {
