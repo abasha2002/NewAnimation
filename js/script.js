@@ -1,10 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
-        heroBeforeAnimation();
-        heroAfterAnimation();
-    }
-
     function heroBeforeAnimation() {
         const scrollBefore = document.querySelector(".loop-marquee_item-before");
         const innerContentBefore = Array.from(scrollBefore.children);
@@ -32,4 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
             scrollAfter.appendChild(duplicateAfter);
         });
     }
+
+
+    heroBeforeAnimation();
+    heroAfterAnimation();
 });
